@@ -5,11 +5,14 @@ To loop until last element: i < arr.length
 
 // Setup
 const myArr = [2, 3, 4, 5, 6];
+var total = 0;
 
 // Only change code below this line
-for(let total=0; total<myArr.length; total++){
-  console.log(myArr[total]);
+for(let i=0; i<myArr.length; i++){
+  console.log(myArr[i]);
+  total+=myArr[i];
 }
+  console.log("The sum is "+total);
 
 >>
 2
@@ -17,3 +20,4 @@ for(let total=0; total<myArr.length; total++){
 4
 5
 6
+The sum is 20
